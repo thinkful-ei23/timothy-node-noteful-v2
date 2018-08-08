@@ -37,6 +37,7 @@ const knex = require('../knex');
 // knex('notes')
 //   .update('title', '7 things lady gaga has in common with dogs')
 //   .where('id', 1013)
+// .returning([‘id’, ‘title’, ‘content’]);
 //   .then(note => {
 //     console.log(note);
 //     console.log('Status 200 - OK');
@@ -89,3 +90,5 @@ const knex = require('../knex');
 //   .catch(err => {
 //     console.error(err);
 //   });
+
+SELECT * FROM folders;
